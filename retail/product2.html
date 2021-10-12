@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Shoes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="assets/css/all.css" rel="stylesheet">
+        <style>
+            .container {
+                display:grid;
+                grid-template-columns:1fr;
+                grid-auto-rows:minmax(100px, auto);
+                grid-template-areas:
+                    "header"
+                    "search"
+                    "cart"
+                    "email"
+                    "phone"
+                    "nav"
+                    "section"
+                    "product1"
+                    "product2"
+                    "product3"
+                    "product4"
+                    "social1"
+                    "social2"
+                    "social3"
+                    "social4"
+                    "footer1"
+                    "footer2";
+            }
+            .product1 {
+                grid-area:product1;
+                text-align:center;
+            }
+            .product2 {
+                grid-area:product2;
+                text-align:center;
+            }
+            .product3 {
+                grid-area:product3;
+                text-align:center;
+            }
+            .product4 {
+                grid-area:product4;
+                text-align:center;
+            }
+            @media only screen and (min-width:620px) {
+                .container {
+                    display:grid;
+                    grid-template-columns:repeat(12, 1fr);
+                    grid-auto-rows:minmax(100px, auto);
+                    grid-template-areas:
+                        "email email email email header header header header search search search search"
+                        "phone phone phone phone header header header header cart cart cart cart"
+                        "nav nav nav nav nav nav nav nav nav nav nav nav"
+                        "section section section section section section section section section section section section"
+                        "product1 product1 product1 product1 product1 product1 product2 product2 product2 product2 product2 product2"
+                        "product3 product3 product3 product3 product3 product3 product4 product4 product4 product4 product4 product4"
+                        "social1 social1 social1 social1 social1 social1 social2 social2 social2 social2 social2 social2"
+                        "social3 social3 social3 social3 social3 social3 social4 social4 social4 social4 social4 social4"
+                        "footer1 footer1 footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2 footer2 footer2";
+                }   
+            }
+            @media only screen and (min-width:900px) {
+                .container {
+                    display:grid;
+                    grid-template-columns:repear(12, 1fr);
+                    grid-auto-rows:minmax(100px, auto);
+                    grid-template-areas:
+                        "email email email email header header header header search search search search"
+                        "phone phone phone phone header header header header cart cart cart cart"
+                        "nav nav nav nav nav nav nav nav nav nav nav nav"
+                        "section section section section section section section section section section section section"
+                        "product1 product1 product1 product2 product2 product2 product3 product3 product3 product4 product4 product4"
+                        "social1 social1 social1 social2 social2 social2 social3 social3 social3 social4 social4 social4"
+                        "footer1 footer1 footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2 footer2 footer2";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="images/logo.png" alt="Modern Chic">
+            </header>
+            <div class="cart">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="email">
+                <p>info@modernchic.com</p> 
+            </div>
+            <div class="phone">
+                <p>619.226.4466</p>
+            </div>
+            <nav>
+                <div><a href="index.html">Home</a></div> <div><a href="product1.html">Dresses</a></div> <div><a href="product2.html">Shoes</a></div> <div><a href="policy.html">Privacy Policy</a></div>
+            </nav>
+            <section>
+                <h2>Walk This Way</h2>
+                <p>From sky-high heels to chic sandals, we can provide you with any shoe that's sure to make your feet happy.</p>
+            </section>
+            <div class="product1">
+                <img src="images/candice.jpg" alt="The Candice">
+                <p>The Candice Heel</p>
+                <p>$80.00</p>
+            </div>
+            <div class="product2">
+                <img src="images/kaia.jpg" alt="The Kaia">
+                <p>The Kaia Platform</p>
+                <p>$75.00</p>
+            </div>
+            <div class="product3">
+                <img src="images/naomi.jpg" alt="The Naomi">
+                <p>The Naomi Sandal</p>
+                <p>$50.00</p>
+            </div>
+            <div class="product4">
+                <img src="images/behati.jpg" alt="The Behati">
+                <p>The Behati Sandal</p>
+                <p>$60.00</p>
+            </div>
+            <div class="social1">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="social2">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="social3">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social4">
+                <i class="fab fa-pinterest"></i>
+            </div>
+            <div class="footer1">
+                <p>Modern Chic Boutique Office</p>
+                <p>123 6th Avenue</p>
+                <p>New York, New York 10011</p>
+            </div>
+            <div class="footer2">
+                <h4>Don't miss a beat!</h4>
+                <p>Join our email list.</p>
+                <input type="text" placeholder="email">
+            </div>
+        </div>
+    </body>
+</html>
